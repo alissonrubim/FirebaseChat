@@ -63,7 +63,7 @@ public class ChatActivity extends AppCompatActivity {
         recyclerView.setAdapter(messageListAdapter);
 
         /* Exemplos */
-        showMessage(new BaseMessage(MyNickname, "Oi", true));
+        showMessage(new BaseMessage(MyNickname, MyNickname + " entrou no chat", true));
     }
 
     private void bind(){
