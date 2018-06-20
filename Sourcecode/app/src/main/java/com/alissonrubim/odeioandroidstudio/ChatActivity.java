@@ -61,6 +61,9 @@ public class ChatActivity extends AppCompatActivity {
         messageListAdapter = new MessageListAdapter(this, messageList);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(messageListAdapter);
+
+        /* Exemplos */
+        showMessage(new BaseMessage(MyNickname, "Oi", true));
     }
 
     private void bind(){
@@ -70,7 +73,7 @@ public class ChatActivity extends AppCompatActivity {
     }
 
     private void sendMessage(){
-        String text = edittext_chatbox.getText().toString();
+        String text = edittext_chatbox.getText().toString().trim();
         if(!text.isEmpty()) {
             BaseMessage message = new BaseMessage(MyNickname, text, true);
             Firebase_sendMessage(message);

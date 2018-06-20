@@ -11,6 +11,8 @@
         android:id="@+id/reyclerview_message_list"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:scrollbars="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +47,10 @@
             android:layout_width="10dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Enviar" />
+            android:background="@android:color/holo_orange_light"
+            android:text="Enviar"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
